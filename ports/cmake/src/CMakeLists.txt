@@ -377,7 +377,7 @@ endif()
 add_subdirectory("libsyn123")
 
 if(UNIX)
-    option(BUILD_PROGRAMS "Build programs" OFF)
+    option(BUILD_PROGRAMS "Build programs" ON)
 
     if(BUILD_PROGRAMS)
 
