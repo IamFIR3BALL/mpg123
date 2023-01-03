@@ -190,7 +190,7 @@ if(NO_MESSAGES)
     set(NO_ERETURN ON)
 endif()
 
-if(WIN32 OR APPLE AND CMAKE_SYSTEM_PROCESSOR MATCHES arm)
+if(WIN32 OR APPLE)
     set(HAVE_FPU 1)
 else()
     cmake_host_system_information(RESULT HAVE_FPU QUERY HAS_FPU)
